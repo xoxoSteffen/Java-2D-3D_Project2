@@ -1,0 +1,7 @@
+
+PROJEKT2/.vscode/settings.json
+{
+  "java.project.referencedLibraries": [
+    "extern/**/*.jar"
+  ]
+}
