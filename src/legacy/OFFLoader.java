@@ -1,5 +1,6 @@
 package legacy;
-import reconstruction.*;
+
+//import reconstruction.*;
 import java.io.FileReader;
 import java.io.BufferedReader;
 import java.util.Scanner;
@@ -53,24 +54,24 @@ public class OFFLoader {
 			sc.close();
 		}
 
-		int fi, fj, fk;
-		for (int i = 0; i < tmesh.numberFaces; i++) {
-			line = br.readLine();
-			sc = new Scanner(line);
+		// int fi, fj, fk;
+		// for (int i = 0; i < tmesh.numberFaces; i++) {
+		// line = br.readLine();
+		// sc = new Scanner(line);
 
-			sc.nextInt(); // dummy we assume triangle meshes
-			fi = sc.nextInt();
-			fj = sc.nextInt();
-			fk = sc.nextInt();
+		// sc.nextInt(); // dummy we assume triangle meshes
+		// fi = sc.nextInt();
+		// fj = sc.nextInt();
+		// fk = sc.nextInt();
 
-			tmesh.setFace(i, fi, fj, fk);
-			sc.close();
-		}
+		// tmesh.setFace(i, fi, fj, fk);
+		// sc.close();
+		// }
 
 		br.close();
 
 		System.out.println("Read mesh: " + fileName);
-		System.out.println("made of " + tmesh.numberVertices + " vertices and " + tmesh.numberFaces + " faces.");
+		//System.out.println("made of " + tmesh.numberVertices + " vertices and " + tmesh.numberFaces + " faces.");
 
 		return tmesh;
 	}
